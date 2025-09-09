@@ -68,7 +68,7 @@ footer {
 
 .col_secs {
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   display: flex;
   flex-direction: column;
 }
