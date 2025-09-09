@@ -8,6 +8,25 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+// Show button when user scrolls down 200px
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+// Scroll to top when button clicked
+scrollBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   fetch("../header.html")
 //     .then((response) => response.text())
