@@ -930,7 +930,7 @@ body {
   top: 5%;
   left: 65%;
   visibility: hidden;
-  width: auto;
+  width: 130px !important;
   height: 130px;
   position: absolute !important;
   /* clip-path: path(
@@ -955,7 +955,7 @@ body {
   top: 35%;
 }
 .tooltiptextSec p {
-  margin-left: -175px;
+ 
   margin-top: 50px;
   font-size: 14px;
 }
